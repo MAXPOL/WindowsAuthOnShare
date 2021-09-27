@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 	system(("net use \\\\ip_address /user:"+login+" "+ password).c_str());
 	result = system(("net use \\\\ip_addres /user:"+login+" "+ password).c_str());
 	if (result != "Command complete.") {
-		std::cout << std::endl << "Îáðàòèòåñü ê ñèñòåìíîìó Àäìèíèñòðàòîðó" << std::endl << "Óëèöà Ïî÷òîâàÿ ä.4 ê.2-11" << std::endl << std::endl;
+		std::cout << std::endl << "Unexpected error. Contact your system administrator" << std::endl;
 		system("pause");
 	} else {
 	Sleep(5000);
